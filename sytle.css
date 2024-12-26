@@ -55,12 +55,13 @@
 
 /* Estilos generales */
 html, body {
-    background: linear-gradient(to bottom, #FFCCE0, #F0B3B3); /* Gradiente de rosa claro a rosa más oscuro */
+    height: 100%; /* Aseguramos que la página ocupe todo el alto del navegador */
     margin: 0;
     padding: 0;
     font-family: "Raleway", sans-serif;
+    background: linear-gradient(to bottom, #FFCCE0, #F0B3B3); /* Gradiente de rosa claro a rosa más oscuro */
+    color: #333; /* Color de texto por defecto */
     box-sizing: border-box;
-    color: #333;  /* Color de texto general */
 }
 
 /* Cabecera */
@@ -125,9 +126,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(./imagenes/aves.jpg);
+    background-image: url(./imagenes/aves.jpg); /* Ruta de la imagen de fondo */
     height: 47.3rem;
-    background-size: 150%;
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
     animation: movimiento 10s infinite linear alternate;
 }
 
@@ -237,148 +238,7 @@ header {
     flex-direction: column;
     align-items: center;
     margin: 5rem;
-    gap: 2rem;
-}
-
-.habilidades__uso, .idiomas {
-    font-size: 1.5rem;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.habilidades__uso {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 10rem;
-}
-
-.habilidades__titulo {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.idiomas__lista {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 3rem;
-    column-gap: 10rem;
-}
-
-.idiamos__caja {
-    margin: 0px;
-}
-
-/* Formacion */
-.formacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 5rem;
-    gap: 1rem;
-}
-
-.formacion__lista li {
-    list-style: none;
-    background: center center transparent;
-}
-
-/* Portafolio */
-.proyectos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
-    gap: 2rem;
-}
-
-.contenedor-portada {
-    width: 100%;
-    height: 5rem;
-    position: relative;
-    background-image: url(./imagenes/colores.jpg);
-}
-
-.degradado {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: -webkit-linear-gradient(left, #192A51, #586da1);
-    opacity: 0.5;
-}
-
-.container-detalles {
-    width: 100%;
-    max-width: 70rem;
-    margin: auto;
-}
-
-.detalles {
-    font-size: 1.5rem;
-    text-align: center;
-    position: relative;
-    color: #ffffff;
-}
-
-.portafolio {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.portafolio .portafolio-uno {
-    height: 100%;
-}
-
-.portafolio img {
-    width: 100%;
-}
-
-/* Contacto */
-.contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
-    gap: 2rem;
-}
-
-.contacto__formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    width: 70%;
-}
-
-.presentacion__contacto {
-    margin-top: 3rem;
-}
-
-form input,
-form textarea {
-    padding: 0.5rem 1rem;
-    background-color: transparent;
-    color: #192A51;
-    border: none;
-    border-bottom: 0.1rem solid #192A51;
-    border-left: 0.1rem solid #192A51;
-    width: 60%;
-    outline: none;
-    font-size: 1rem;
-    resize: none;
-}
-
-form input::placeholder,
-form textarea::placeholder {
-    font-size: 1rem;
-}
-
-form button {
-    background-color: transparent;
-    padding: .5rem 1.
+  
 
 
    
