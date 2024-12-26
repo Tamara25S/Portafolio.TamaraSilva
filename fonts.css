@@ -1,3 +1,4 @@
+/* Definición de las fuentes */
 @font-face {
     font-family: "Raleway";
     src: url("/fonts/Raleway-Black.ttf") format("truetype");
@@ -50,4 +51,35 @@
     font-family: "Raleway";
     src: url("/fonts/Raleway-Thin.ttf") format("truetype");
     font-weight: 100;
+}
+
+/* Uso de la fuente en el cuerpo de la página */
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+/* Ejemplo de uso de diferentes pesos */
+h1 {
+    font-weight: 900; /* Usando la versión Black */
+}
+
+h2 {
+    font-weight: 700; /* Usando la versión Bold */
+}
+
+p {
+    font-weight: 400; /* Usando la versión Regular */
+}
+
+/* Más ejemplos */
+h3 {
+    font-weight: 600; /* Usando la versión SemiBold */
+}
+
+h4 {
+    font-weight: 300; /* Usando la versión Light */
+}
+
+h5 {
+    font-weight: 200; /* Usando la versión ExtraLight */
 }
