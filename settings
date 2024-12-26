@@ -1,3 +1,15 @@
 {
-    "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "liveServer.settings.ignoreFiles": [
+    "**/*.scss",
+    "**/*.ts",
+    "**/*.coffee",
+    "**/*.jsx",
+    "**/*.tsx",
+    "**/*.md"
+  ],
+  "liveServer.settings.wait": 500,
+  "liveServer.settings.noBrowser": false,
+  "liveServer.settings.fullReload": true
 }
+
