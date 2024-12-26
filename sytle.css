@@ -1,10 +1,66 @@
-/* General */
+/* Definición de las fuentes personalizadas */
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-Black.ttf") format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-Thin.ttf") format("truetype");
+    font-weight: 100;
+}
+
+/* Estilos generales */
 html, body {
-    background-color: #F5E6E8 !important; /* Asegura que el fondo color rosa claro se aplique */
+    background: linear-gradient(to bottom, #FFCCE0, #F0B3B3); /* Gradiente de rosa claro a rosa más oscuro */
     margin: 0;
     padding: 0;
-    font-family: "Raleway", sans-serif; /* Asegura que la fuente se cargue correctamente */
+    font-family: "Raleway", sans-serif;
     box-sizing: border-box;
+    color: #333;  /* Color de texto general */
 }
 
 /* Cabecera */
@@ -60,7 +116,7 @@ header {
 
 .navegacion__lista li a:hover {
     color: #586da1;
-    transition: color 0.3s ease-out; 
+    transition: color 0.3s ease-out;
 }
 
 /* Presentación */
@@ -106,7 +162,7 @@ header {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     font-weight: 400;
-    color: #192A51;
+    color: var(#192A51);
 }
 
 .presentacion__contenedor h6 {
@@ -115,7 +171,7 @@ header {
     margin-left: 5rem;
     font-size: 1.5rem;
     font-weight: 400;
-    color: #192A51;
+    color: var(#192A51);
 }
 
 .presentacion__imagen img {
@@ -125,7 +181,7 @@ header {
     padding: 2%;
 }
 
-/* Sobre mí */
+/* SOBRE MI */
 .sobre-mi {
     display: flex;
     flex-direction: column;
@@ -175,7 +231,7 @@ header {
     gap: 50px;
 }
 
-/* Habilidades */
+/* skills */
 .habilidades {
     display: flex;
     flex-direction: column;
@@ -211,7 +267,11 @@ header {
     column-gap: 10rem;
 }
 
-/* Formación */
+.idiamos__caja {
+    margin: 0px;
+}
+
+/* Formacion */
 .formacion {
     display: flex;
     flex-direction: column;
@@ -318,90 +378,8 @@ form textarea::placeholder {
 
 form button {
     background-color: transparent;
-    padding: .5rem 1.5rem;
-    border: none;
-    border-inline: 0.1rem solid #192A51;
-    font-size: 1rem;
-    cursor: pointer;
-}
+    padding: .5rem 1.
 
-form button:hover {
-    background-color: #967AA1;
-    transition: background-color 0.3s ease;
-}
-
-form #comment {
-    height: 100px;
-}
-
-form p {
-    margin-left: 0px;
-    font-size: 0.875rem;
-}
-
-/* Pie de página */
-.container {
-    width: min(90%, 1220px);
-    margin-inline: auto;
-}
-
-footer a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-footer {
-    margin-top: 5rem;
-    background-color: #000;
-    color: #ffffff;
-    padding: 1rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.footer-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.social {
-    display: flex;
-    gap: 1rem;
-}
-
-.footer-info p {
-    font-size: 1rem;
-    line-height: 1.2rem;
-    color: #d7d7d7;
-}
-
-/* Animaciones */
-@keyframes movimiento {
-    from {
-        background-position: bottom left;
-    }
-    to {
-        background-position: top right;
-    }
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    header {
-        margin-top: 0;
-        background-color: black;
-        height: 3rem;
-    }
-
-    .navegacion {
-        height: 100%;
-        align-items: center;
-    }
 
    
 
